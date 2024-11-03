@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diquan Ishmon - Innovator, Creator, Drone Specialist</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
 </head>
@@ -24,34 +25,30 @@
     </nav>
 
     <!-- Top Banner -->
-    <header class="top-banner fade-in rellax" data-rellax-speed="-2">
-        <img src="images/background.jpg" alt="Diquan Ishmon in action" class="banner-image">
-        <div class="tagline">
-            <h1 id="typed"></h1>
-        </div>
+    <header class="top-banner">
+        <h1>Diquan Ishmon</h1>
+        <p class="typed-text"></p>
+        <img src="assets/images/your-picture.jpg" alt="Diquan Ishmon" class="profile-picture">
+        <p class="mission-statement">My mission is to innovate, create, and inspire through cutting-edge drone technology and creative solutions.</p>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <section id="home" class="rellax" data-rellax-speed="1">
-            <h2>Home</h2>
-            <p>This is the homepage of my website.</p>
-        </section>
+        <!-- Your content here -->
     </main>
 
     <footer>
-        <p>&copy; 2024 My Website</p>
+        <p>&copy; 2023 Diquan Ishmon</p>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            new Typed('#typed', {
+            var typed = new Typed('.typed-text', {
                 strings: ["Innovator", "Creator", "Drone Specialist"],
                 typeSpeed: 50,
-                backSpeed: 25,
+                backSpeed: 50,
                 loop: true
             });
-
-            var rellax = new Rellax('.rellax');
         });
     </script>
 </body>

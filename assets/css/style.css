@@ -1,41 +1,39 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .navbar {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1em;
+    text-align: center;
 }
 
 .navbar ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 .navbar ul li {
-    display: inline;
+    margin: 0 1em;
 }
 
 .navbar ul li a {
-    display: block;
     color: white;
-    text-align: center;
-    padding: 14px 20px;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
-    background-color: #ddd;
-    color: black;
+    color: #2b12ed;
 }
 
 header {
@@ -67,10 +65,10 @@ section {
 }
 
 footer {
-    background-color: #2b12ed; /* Changed from #4CAF50 and #007BFF to #2b12ed */
-    color: white;
     text-align: center;
     padding: 1em 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -404,4 +402,50 @@ button:hover {
 
 #map {
     margin-top: 2em;
+}
+
+.contact-button img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-button img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top-banner {
+    text-align: center;
+    padding: 5em 1em;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.top-banner h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #2b12ed;
+    text-shadow: 0 0 10px #2b12ed, 0 0 20px #2b12ed, 0 0 30px #2b12ed;
+}
+
+.top-banner .typed-text {
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+}
+
+.profile-picture {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 1em 0;
+    box-shadow: 0 0 10px #2b12ed, 0 0 20px #2b12ed, 0 0 30px #2b12ed;
+}
+
+.mission-statement {
+    font-size: 1.2em;
+    margin-top: 1em;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
 }
