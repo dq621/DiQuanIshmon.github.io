@@ -39,7 +39,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #2b12ed; /* Changed from #4CAF50 and #007BFF to #2b12ed */
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -67,7 +67,7 @@ section {
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #2b12ed; /* Changed from #4CAF50 and #007BFF to #2b12ed */
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -140,7 +140,7 @@ blockquote footer {
 }
 
 .icon svg {
-    fill: #4CAF50;
+    fill: #2b12ed; /* Changed from #4CAF50 and #007BFF to #2b12ed */
     transition: fill 0.3s;
 }
 
@@ -149,7 +149,7 @@ blockquote footer {
 }
 
 .icon:hover svg {
-    fill: #45a049;
+    fill: #0056b3; /* Changed from #45a049 to #0056b3 */
 }
 
 .funding-progress {
@@ -172,7 +172,7 @@ blockquote footer {
 }
 
 .progress {
-    background-color: #4CAF50;
+    background-color: #2b12ed;
     height: 100%;
     border-radius: 5px;
     transition: width 1s ease-in-out;
@@ -249,7 +249,7 @@ blockquote footer {
 .signup-form button {
     width: 100%;
     padding: 1em;
-    background-color: #4CAF50;
+    background-color: #2b12ed; /* Changed from #4CAF50 and #007BFF to #2b12ed */
     color: white;
     border: none;
     border-radius: 5px;
@@ -257,7 +257,7 @@ blockquote footer {
 }
 
 .signup-form button:hover {
-    background-color: #45a049;
+    background-color: #0056b3; /* Changed from #45a049 to #0056b3 */
 }
 
 .product-grid, .top-picks-grid {
@@ -355,7 +355,7 @@ blockquote footer {
 }
 
 .resource a:hover {
-    color: #4CAF50;
+    color: #2b12ed;
 }
 
 .resource i {
@@ -391,7 +391,7 @@ blockquote footer {
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #2b12ed;
     color: white;
     border: none;
     border-radius: 5px;
@@ -399,7 +399,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #2b12ed;
 }
 
 #map {
