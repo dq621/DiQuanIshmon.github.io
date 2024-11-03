@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diquan Ishmon - Innovator, Creator, Drone Specialist</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="ventures.html">Ventures</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Top Banner -->
+    <header class="top-banner fade-in rellax" data-rellax-speed="-2">
+        <img src="images/background.jpg" alt="Diquan Ishmon in action" class="banner-image">
+        <div class="tagline">
+            <h1 id="typed"></h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="rellax" data-rellax-speed="1">
+            <h2>Home</h2>
+            <p>This is the homepage of my website.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new Typed('#typed', {
+                strings: ["Innovator", "Creator", "Drone Specialist"],
+                typeSpeed: 50,
+                backSpeed: 25,
+                loop: true
+            });
+
+            var rellax = new Rellax('.rellax');
+        });
+    </script>
+</body>
+</html>

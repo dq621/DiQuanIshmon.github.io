@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Diquan Ishmon</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="ventures.html">Ventures</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <!-- Filter Buttons -->
+            <div class="filters">
+                <button data-filter="*">Show All</button>
+                <button data-filter=".drone">Drone</button>
+                <button data-filter=".photography">Photography</button>
+                <button data-filter=".video">Video</button>
+            </div>
+
+            <!-- Project Cards -->
+            <div class="grid">
+                <div class="element-item drone" data-category="drone">
+                    <h3>Project 1</h3>
+                    <p>Drone project description.</p>
+                    <div class="tools">
+                        <a href="#" class="tool" data-filter=".drone">Drone</a>
+                        <a href="#" class="tool" data-filter=".photography">Photography</a>
+                    </div>
+                </div>
+                <div class="element-item photography" data-category="photography">
+                    <h3>Project 2</h3>
+                    <p>Photography project description.</p>
+                    <div class="tools">
+                        <a href="#" class="tool" data-filter=".photography">Photography</a>
+                    </div>
+                </div>
+                <div class="element-item video" data-category="video">
+                    <h3>Project 3</h3>
+                    <p>Video project description.</p>
+                    <div class="tools">
+                        <a href="#" class="tool" data-filter=".video">Video</a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            // Initialize Isotope
+            var $grid = $('.grid').isotope({
+                itemSelector: '.element-item',
+                layoutMode: 'fitRows'
+            });
+
+            // Filter items on button click
+            $('.filters').on('click', 'button', function(){
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({ filter: filterValue });
+            });
+
+            // Filter items on tool click
+            $('.tools').on('click', '.tool', function(e){
+                e.preventDefault();
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({ filter: filterValue });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Diquan Ishmon</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timelinejs/3.6.6/css/timeline.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timelinejs/3.6.6/js/timeline.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="ventures.html">Ventures</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Information about the website or the owner.</p>
+
+            <!-- Timeline Section -->
+            <div id="timeline-embed"></div>
+
+            <!-- Interactive Skills Section -->
+            <h3>Skills</h3>
+            <div class="skills">
+                <div class="skill">
+                    <h4>Drone Piloting</h4>
+                    <img src="images/drone-piloting.jpg" alt="Drone Piloting">
+                </div>
+                <div class="skill">
+                    <h4>Robotics</h4>
+                    <img src="images/robotics.jpg" alt="Robotics">
+                </div>
+                <div class="skill">
+                    <h4>Artificial Intelligence</h4>
+                    <img src="images/artificial-intelligence.jpg" alt="Artificial Intelligence">
+                </div>
+                <div class="skill">
+                    <h4>Software Development</h4>
+                    <img src="images/software-development.jpg" alt="Software Development">
+                </div>
+            </div>
+
+            <!-- Mentor Quotes Section -->
+            <h3>Mentor Quotes</h3>
+            <blockquote>
+                <p>"Diquan's dedication to his craft is unparalleled. His innovative approach to drone technology is truly inspiring."</p>
+                <footer>- John Doe, Mentor</footer>
+            </blockquote>
+            <blockquote>
+                <p>"A visionary in the field of drone photography, Diquan's work speaks volumes about his talent and commitment."</p>
+                <footer>- Jane Smith, Mentor</footer>
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var timeline = new TL.Timeline('timeline-embed', 'path/to/your/timeline.json');
+        });
+    </script>
+</body>
+</html>

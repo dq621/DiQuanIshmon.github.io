@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventures - Diquan Ishmon</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="ventures.html">Ventures</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="Ishmon Ventures">
+            <h2>Ventures</h2>
+
+            <!-- Animated Funding Progress Bars -->
+            <div class="funding-progress">
+                <div class="funding-item">
+                    <h3>Project A</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <p>70% funded</p>
+                </div>
+                <div class="funding-item">
+                    <h3>Project B</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    <p>50% funded</p>
+                </div>
+                <div class="funding-item">
+                    <h3>Project C</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <p>90% funded</p>
+                </div>
+            </div>
+
+            <!-- Dynamic Testimonials Slider -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote>
+                            <p>"Diquan's ventures are groundbreaking and have a significant impact on the industry."</p>
+                            <footer>- John Doe, Investor</footer>
+                        </blockquote>
+                    </div>
+                    <div class="swiper-slide">
+                        <blockquote>
+                            <p>"Investing in Diquan's projects has been one of the best decisions I've made."</p>
+                            <footer>- Jane Smith, Investor</footer>
+                        </blockquote>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Custom Icons for Funding Options -->
+            <div class="funding-icons">
+                <div class="icon">
+                    <svg width="50" height="50" viewBox="0 0 24 24">
+                        <path d="M12 0l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-3.01L12 0z"/>
+                    </svg>
+                    <p>Option 1</p>
+                </div>
+                <div class="icon">
+                    <svg width="50" height="50" viewBox="0 0 24 24">
+                        <path d="M12 0l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-3.01L12 0z"/>
+                    </svg>
+                    <p>Option 2</p>
+                </div>
+                <div class="icon">
+                    <svg width="50" height="50" viewBox="0 0 24 24">
+                        <path d="M12 0l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-3.01L12 0z"/>
+                    </svg>
+                    <p>Option 3</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Swiper
+            var swiper = new Swiper('.swiper-container', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
+</body>
+</html>

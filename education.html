@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Diquan Ishmon</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="ventures.html">Ventures</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="education">
+            <h2>Education</h2>
+
+            <!-- Video Preview Thumbnails -->
+            <div class="video-thumbnails">
+                <div class="video-thumbnail">
+                    <video src="videos/preview1.mp4" muted></video>
+                    <p>Video Title 1</p>
+                </div>
+                <div class="video-thumbnail">
+                    <video src="videos/preview2.mp4" muted></video>
+                    <p>Video Title 2</p>
+                </div>
+                <!-- Add more video thumbnails as needed -->
+            </div>
+
+            <!-- Upcoming Events Calendar -->
+            <div id="calendar"></div>
+
+            <!-- Resource Downloads with Hover Effects -->
+            <div class="resources">
+                <div class="resource">
+                    <a href="resources/resource1.pdf" download>
+                        <i class="fas fa-file-download"></i>
+                        <p>Resource 1</p>
+                    </a>
+                </div>
+                <div class="resource">
+                    <a href="resources/resource2.pdf" download>
+                        <i class="fas fa-file-download"></i>
+                        <p>Resource 2</p>
+                    </a>
+                </div>
+                <!-- Add more resources as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize FullCalendar
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: [
+                    {
+                        title: 'Event 1',
+                        start: '2023-10-01',
+                        description: 'Description for Event 1'
+                    },
+                    {
+                        title: 'Event 2',
+                        start: '2023-10-15',
+                        description: 'Description for Event 2'
+                    }
+                    // Add more events as needed
+                ],
+                eventDidMount: function(info) {
+                    var tooltip = new Tooltip(info.el, {
+                        title: info.event.extendedProps.description,
+                        placement: 'top',
+                        trigger: 'hover',
+                        container: 'body'
+                    });
+                }
+            });
+            calendar.render();
+
+            // Video preview on hover
+            document.querySelectorAll('.video-thumbnail video').forEach(video => {
+                video.addEventListener('mouseover', () => video.play());
+                video.addEventListener('mouseout', () => video.pause());
+            });
+        });
+    </script>
+</body>
+</html>

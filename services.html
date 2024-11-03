@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Diquan Ishmon</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="ventures.html">Ventures</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="services">
+            <h2>Services</h2>
+            <p>Details about the services offered.</p>
+
+            <!-- Before & After Sliders -->
+            <div class="juxtapose" data-startingposition="50%">
+                <img src="images/before.jpg" alt="Before">
+                <img src="images/after.jpg" alt="After">
+            </div>
+
+            <!-- Interactive Service Area Map -->
+            <div id="map" style="height: 400px;"></div>
+
+            <!-- Service Iconography -->
+            <div class="service-icons">
+                <div class="icon">
+                    <svg width="50" height="50" viewBox="0 0 24 24">
+                        <path d="M12 0l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-3.01L12 0z"/>
+                    </svg>
+                    <p>Photography</p>
+                </div>
+                <div class="icon">
+                    <svg width="50" height="50" viewBox="0 0 24 24">
+                        <path d="M12 0l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-3.01L12 0z"/>
+                    </svg>
+                    <p>Video Editing</p>
+                </div>
+                <div class="icon">
+                    <svg width="50" height="50" viewBox="0 0 24 24">
+                        <path d="M12 0l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-3.01L12 0z"/>
+                    </svg>
+                    <p>Drone Piloting</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+
+    <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Leaflet map
+            var map = L.map('map').setView([51.505, -0.09], 13);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            var marker = L.marker([51.5, -0.09]).addTo(map)
+                .bindPopup('Service Area 1')
+                .openPopup();
+
+            // Add more markers as needed
+        });
+    </script>
+</body>
+</html>
