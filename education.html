@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Diquan Ishmon - Innovator, Creator, Drone Specialist</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
-    </head>
-    <body>
-        <!-- Sidebar -->
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="ventures.html">Ventures</a>
-            <a href="services.html">Services</a>
-            <a href="shop.html">Shop</a>
-            <a href="education.html">Education</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    
-        <!-- Hamburger Menu Icon -->
-        <div id="main">
-            <span class="openbtn" onclick="openNav()">&#9776;</span>
-        </div>    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Diquan Ishmon</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="ventures.html">Ventures</a>
+        <a href="services.html">Services</a>
+        <a href="shop.html">Shop</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hamburger Menu Icon -->
+    <div id="main">
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
+    </div>
 
     <main>
         <section id="education">
@@ -74,6 +73,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
     <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize FullCalendar
             var calendarEl = document.getElementById('calendar');
