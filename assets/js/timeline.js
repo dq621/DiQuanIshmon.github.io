@@ -1,4 +1,4 @@
-{
+const timelineData = {
     "title": {
         "media": {
             "url": "path/to/your/image.jpg",
@@ -38,4 +38,4 @@
         }
         // Add more events as needed
     ]
-}
+};

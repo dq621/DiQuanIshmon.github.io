@@ -104,10 +104,14 @@
         </section>
     </main>
 
-    <footer style="position: fixed; bottom: 0; width: 100%; background-color: #f1f1f1; text-align: center; padding: 10px 0;">
-        <p>&copy; 2024 Di'Quan Ishmon</p>
+    <footer class="footer-fixed">
+        <p>&copy; <span id="current-year"></span> Di'Quan Ishmon</p>
 
-        
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/diquan-ishmon-0b1b3b1b/" target="_blank">
+                <img src="assets/images/linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -125,7 +129,9 @@
                     prevEl: '.swiper-button-prev',
                 },
             });
-        });
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
     </script>
 </body>
 </html>
