@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diquan Ishmon - Innovator, Creator, Drone Specialist</title>
+    <title>Projects - Diquan Ishmon</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 </head>
 <body>
     <!-- Sidebar -->
@@ -22,7 +22,7 @@
         <a href="education.html">Education</a>
         <a href="contact.html">Contact</a>
     </div>
-    
+
     <!-- Hamburger Menu Icon -->
     <div id="main">
         <span class="openbtn" onclick="openNav()">&#9776;</span>
@@ -94,6 +94,16 @@
                 $grid.isotope({ filter: filterValue });
             });
         });
+
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
     </script>
 </body>
 </html>
