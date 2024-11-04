@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
+/*.navbar {
     background: rgba(0, 0, 0, 0.8);
     padding: 1em;
     text-align: center;
@@ -34,7 +34,7 @@ body {
 
 .navbar ul li a:hover {
     color: #2b12ed;
-}
+}*/
 
 header {
     background-color: #2b12ed; /* Changed from #4CAF50 and #007BFF to #2b12ed */
@@ -425,8 +425,8 @@ button:hover {
 .top-banner h1 {
     font-size: 3em;
     margin: 0;
-    color: #0d0c0c;
-    text-shadow: 0 0 10px #f3f3f3, 0 0 20px #f3f3f3, 0 0 30px #2b12ed;
+    color: #2b12ed;
+    text-shadow: 0 0 10px #2b12ed, 0 0 20px #2b12ed, 0 0 30px #2b12ed;
 }
 
 .top-banner .typed-text {
