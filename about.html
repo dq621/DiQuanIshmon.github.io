@@ -9,20 +9,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timelinejs/3.6.6/js/timeline.min.js"></script>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="ventures.html">Ventures</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
+    <!-- Sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects & Research</a>
+        <a href="ventures.html">Ishmon Ventures</a>
+        <a href="services.html">Services</a>
+        <a href="shop.html">Shop</a>
+        <a href="education.html">Speaking</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <!-- Hamburger Menu Icon -->
+    <div id="main">
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
+    </div>    
     <main>
         <section id="about">
             <h2>About Me</h2>
@@ -79,12 +82,15 @@
             <h3>Mentor Quotes</h3>
             <blockquote>
                 <p>"Diquan's dedication to his craft is unparalleled. His innovative approach to drone technology is truly inspiring."</p>
-                <footer>- John Doe, Mentor</footer>
+                <footer>- Will Hill, Mentor</footer>
             </blockquote>
             <blockquote>
                 <p>"A visionary in the field of drone photography, Diquan's work speaks volumes about his talent and commitment."</p>
                 <footer>- Jane Smith, Mentor</footer>
             </blockquote>
+            <button onclick="window.location.href='resume.pdf'">Di'Quan's Professional Resume</button>
+
+            <button onclick="window.location.href='https://forms.gle/your-google-form-link'">Get in touch today for more information!</button>
         </section>
     <div class="logo-header">
         <img src="images/logo.png" alt="Logo">

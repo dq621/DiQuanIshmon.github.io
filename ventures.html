@@ -8,19 +8,23 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="ventures.html">Ventures</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects & Research</a>
+        <a href="ventures.html">Ishmon Ventures</a>
+        <a href="services.html">Services</a>
+        <a href="shop.html">Shop</a>
+        <a href="education.html">Speaking</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <!-- Hamburger Menu Icon -->
+    <div id="main">
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
+    </div>    
 
     <main>
         <section id="Ishmon Ventures">
@@ -111,6 +115,8 @@
             <a href="https://www.linkedin.com/in/diquan-ishmon-0b1b3b1b/" target="_blank">
                 <img src="assets/images/linkedin-icon.png" alt="LinkedIn">
             </a>
+            <a href="" target="_blank">
+                <img src="assets/images/Email-icon.png" alt="Email">
         </div>
     </footer>
 
@@ -131,6 +137,7 @@
             });
         // Set current year in footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
     </script>
     </script>
 </body>
