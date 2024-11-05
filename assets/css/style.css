@@ -1,6 +1,6 @@
 body {
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background: linear-gradient(135deg, #0f0c29, #ebebeb, #24243e);
     color: white;
     margin: 0;
     padding: 0;
@@ -43,12 +43,12 @@ header {
     text-align: center;
     opacity: 0;
     animation: fadeIn 2s forwards;
-    margin-top: 100px; /* Adjust for fixed navbar */
+    margin-top: 25px; /* Adjust for fixed navbar */
 }
 
 @keyframes fadeIn {
     to {
-        opacity: 3;
+        opacity: 6;
     }
 }
 
@@ -400,9 +400,7 @@ button:hover {
     background-color: #2b12ed;
 }
 
-#map {
-    margin-top: 2em;
-}
+
 
 .contact-button img {
     width: 100px;
@@ -425,7 +423,7 @@ button:hover {
 .top-banner h1 {
     font-size: 3em;
     margin: 0;
-    color: #2b12ed;
+    color: #ebebeb;
     text-shadow: 0 0 10px #2b12ed, 0 0 20px #2b12ed, 0 0 30px #2b12ed;
 }
 
@@ -446,7 +444,7 @@ button:hover {
 .mission-statement {
     font-size: 1.2em;
     margin-top: 1em;
-    color: #fff;
+    color: #000000;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
 }
 
@@ -503,4 +501,353 @@ button:hover {
 
 .openbtn:hover {
     background-color: #444;
+}
+
+/* Footer */
+
+#footer {
+    background: #272833;
+    padding: 6em 0;
+    text-align: center;
+}
+
+    #footer .icons .icon.alt {
+        text-decoration: none;
+    }
+
+        #footer .icons .icon.alt:before {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            text-transform: none !important;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 400;
+        }
+
+        #footer .icons .icon.alt:before {
+            color: #272833 !important;
+            text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
+        }
+
+    #footer .copyright {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.8em;
+        line-height: 1em;
+        margin: 2em 0 0 0;
+        padding: 0;
+        text-align: center;
+    }
+
+        #footer .copyright li {
+            border-left: solid 1px rgba(255, 255, 255, 0.3);
+            display: inline-block;
+            list-style: none;
+            margin-left: 1.5em;
+            padding-left: 1.5em;
+        }
+
+            #footer .copyright li:first-child {
+                border-left: 0;
+                margin-left: 0;
+                padding-left: 0;
+            }
+
+            #footer .copyright li a {
+                color: inherit;
+            }
+
+/* Media Queries */
+
+/* TV screens */
+@media (min-width: 1920px) {
+    .top-banner h1 {
+        font-size: 4em;
+    }
+
+    .top-banner .typed-text {
+        font-size: 2em;
+    }
+
+    .profile-picture {
+        width: 200px;
+    }
+
+    .mission-statement {
+        font-size: 2em;
+    }
+
+    .product-grid, .top-picks-grid {
+        gap: 30px;
+    }
+
+    .product-card {
+        width: 300px;
+        padding: 30px;
+    }
+
+    .video-thumbnails {
+        gap: 30px;
+    }
+
+    .video-thumbnail {
+        width: 300px;
+        height: 200px;
+    }
+
+    .video-thumbnail video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .resources {
+        gap: 30px;
+    }
+
+    .resource i {
+        font-size: 3em;
+    }
+
+    .contact-button img {
+        width: 100px;
+    }
+
+    .openbtn {
+        padding: 15px 30px;
+    }
+}
+
+/* Laptop screens */
+@media (min-width: 1280px) and (max-width: 1919px) {
+    .top-banner h1 {
+        font-size: 3em;
+    }
+
+    .top-banner .typed-text {
+        font-size: 1.5em;
+    }
+
+    .profile-picture {
+        width: 150px;
+    }
+
+    .mission-statement {
+        font-size: 1.5em;
+    }
+
+    .product-grid, .top-picks-grid {
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 200px;
+        padding: 20px;
+    }
+
+    .video-thumbnails {
+        gap: 20px;
+    }
+
+    .video-thumbnail {
+        width: 200px;
+        height: 150px;
+    }
+
+    .video-thumbnail video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .resources {
+        gap: 20px;
+    }
+
+    .resource i {
+        font-size: 2em;
+    }
+
+    .contact-button img {
+        width: 75px;
+    }
+
+    .openbtn {
+        padding: 10px 20px;
+    }
+}
+
+/* Tablet screens (horizontal) */
+@media (min-width: 768px) and (max-width: 1279px) {
+    .top-banner h1 {
+        font-size: 2.5em;
+    }
+
+    .top-banner .typed-text {
+        font-size: 1.2em;
+    }
+
+    .profile-picture {
+        width: 125px;
+    }
+
+    .mission-statement {
+        font-size: 1.2em;
+    }
+
+    .product-grid, .top-picks-grid {
+        gap: 15px;
+    }
+
+    .product-card {
+        width: 175px;
+        padding: 15px;
+    }
+
+    .video-thumbnails {
+        gap: 15px;
+    }
+
+    .video-thumbnail {
+        width: 175px;
+        height: 125px;
+    }
+
+    .video-thumbnail video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .resources {
+        gap: 15px;
+    }
+
+    .resource i {
+        font-size: 1.8em;
+    }
+
+    .contact-button img {
+        width: 60px;
+    }
+
+    .openbtn {
+        padding: 8px 16px;
+    }
+}
+
+/* Tablet screens (vertical) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .top-banner h1 {
+        font-size: 2em;
+    }
+
+    .top-banner .typed-text {
+        font-size: 1em;
+    }
+
+    .profile-picture {
+        width: 100px;
+    }
+
+    .mission-statement {
+        font-size: 1em;
+    }
+
+    .product-grid, .top-picks-grid {
+        gap: 10px;
+    }
+
+    .product-card {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .video-thumbnails {
+        gap: 10px;
+    }
+
+    .video-thumbnail {
+        width: 150px;
+        height: 100px;
+    }
+
+    .video-thumbnail video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .resources {
+        gap: 10px;
+    }
+
+    .resource i {
+        font-size: 1.5em;
+    }
+
+    .contact-button img {
+        width: 50px;
+    }
+
+    .openbtn {
+        padding: 5px 10px;
+    }
+}
+
+/* Phone screens */
+@media (max-width: 480px) {
+    .top-banner h1 {
+        font-size: 1.5em;
+    }
+
+    .top-banner .typed-text {
+        font-size: 0.8em;
+    }
+
+    .profile-picture {
+        width: 75px;
+    }
+
+    .mission-statement {
+        font-size: 0.8em;
+    }
+
+    .product-grid, .top-picks-grid {
+        gap: 5px;
+    }
+
+    .product-card {
+        width: 100px;
+        padding: 5px;
+    }
+
+    .video-thumbnails {
+        gap: 5px;
+    }
+
+    .video-thumbnail {
+        width: 100px;
+        height: 75px;
+    }
+
+    .video-thumbnail video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .resources {
+        gap: 5px;
+    }
+
+    .resource i {
+        font-size: 1.2em;
+    }
+
+    .contact-button img {
+        width: 40px;
+    }
+
+    .openbtn {
+        padding: 3px 6px;
+    }
 }
