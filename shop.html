@@ -93,9 +93,19 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 My Website</p>
+    <footer id="footer">
+        <div class="icons">
+            <a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a>
+            <a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a>
+            <a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a>
+            <a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a>
+        </div>
+        <ul class="copyright">
+            <li>&copy; 2023 Diquan Ishmon</li>
+            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
     </footer>
+
     <script>
         function openNav() {
             document.getElementById("mySidebar").style.width = "250px";
@@ -106,6 +116,15 @@
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft= "0";
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var typed = new Typed('.typed-text', {
+                strings: ["Drone Phtography", "Aerial Mapping", "More coming soon...."],
+                typeSpeed: 70,
+                backSpeed: 70,
+                loop: true
+            });
+        });
     </script>
 </body>
 </html>
