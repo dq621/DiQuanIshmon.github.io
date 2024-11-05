@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Diquan Ishmon</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
 </head>
 <body>
     <!-- Sidebar -->
@@ -101,10 +103,6 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var timeline = new TL.Timeline('timeline-embed', 'path/to/your/timeline.json');
-        });
-
         function openNav() {
             document.getElementById("mySidebar").style.width = "250px";
             document.getElementById("main").style.marginLeft = "250px";
@@ -114,6 +112,11 @@
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft= "0";
         }
+        document.addEventListener('DOMContentLoaded', function() {
+            var timeline = new TL.Timeline('timeline-embed', 'path/to/your/timeline.json');
+        });
+
+        
     </script>
 </body>
 </html>
